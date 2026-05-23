@@ -145,6 +145,7 @@ body {
     color: var(--lima);
     font-weight: 600;
     transition: opacity var(--transition);
+    text-decoration: none;
 }
 
 .form-subtitle a:hover {

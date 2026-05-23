@@ -92,8 +92,6 @@ body {
 }
 
 
-
-
 /* Estilizando a seção de cadastro */
 /*/////////////////////////////////*/
 .Cadastro{
@@ -196,7 +194,7 @@ form button[type="submit"]:active {
 /*/////////////////////////////////*/
 /*/////////////////////////////////*/
 /*/////////////////////////////////*/
-/*///////// LADO DIREITO /////////*/
+/*///////// LADO DIREITO //////////*/
 /*/////////////////////////////////*/
 /*/////////////////////////////////*/
 /*/////////////////////////////////*/
@@ -268,4 +266,54 @@ form button[type="submit"]:active {
     line-height: 0.8;
     pointer-events: none;
     z-index: 1;
+}
+
+
+/*/////////////////////////////////*/
+/*/////////////////////////////////*/
+/*/////////////////////////////////*/
+/*//////// RESPONSIVIDADE /////////*/
+/*/////////////////////////////////*/
+/*/////////////////////////////////*/
+/*/////////////////////////////////*/
+
+@media (max-width: 900px) {
+    body{
+        overflow: auto;
+    }
+
+    .background{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .left {
+        width: 100%;
+        min-height: calc(100vh - 50px);
+        padding: 3.5rem 1.75rem 2rem 1.75rem;
+    }
+
+    .Cadastro{
+        margin-bottom: 1rem;
+    }
+
+    form button[type="submit"]{
+        margin-top: 1rem;
+    }
+
+    .Menu_titulo{
+        font-size: 2.5rem;
+    }
+
+    .logo-box{
+        margin-bottom: 1rem;
+    }
+
+    form input[type="email"],form input[type="password"]{
+        margin-bottom: 0.75rem;
+    }
 }

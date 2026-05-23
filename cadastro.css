@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;600;700&display=swap');
+
+:root {
+    --lima:          #c8f125;
+    --neon-lima:     #d9ff5c;
+    --carvao:        #141414;
+    --chumbo:        #2a2a2a;
+    --chumbo2:       #3a3a3a;
+    --areia:         #f5f0e8;
+    --branco:        #ffffff;
+    --cinza-texto:   #a0a0a0;
+
+    --fonte-display: 'Bebas Neue', sans-serif;
+    --fonte-corpo:   'Lora', serif;
+    --fonte-ui:      'Outfit', sans-serif;
+
+    --raio:       4px;
+    --transition: 0.2s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.form-page-wrap {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-visual {
+    background: var(--chumbo);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 3rem;
+}
+
+.form-visual-content {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 5rem;
+}
+
+.form-visual .big-number {
+    font-family: var(--fonte-display);
+    font-size: 16rem;
+    color: var(--lima);
+    opacity: 0.5;
+    position: absolute;
+    bottom: -45px;
+    right: 2rem;
+    line-height: 0.8;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.ODS8 {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--lima);
+    border: 1px solid var(--lima);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-family: var(--fonte-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.form-visual-content blockquote {
+    font-family: var(--fonte-corpo);
+    font-style: italic;
+    font-size: 1.35rem;
+    line-height: 1.6;
+    color: var(--branco);
+    margin-bottom: 1rem;
+    border-left: 3px solid var(--lima);
+    padding-left: 1.2rem;
+}
+
+.form-visual-content cite {
+    font-family: var(--fonte-ui);
+    font-style: normal;
+    font-size: 0.85rem;
+    color: var(--cinza-texto);
+    letter-spacing: 0.5px;
+    display: block;
+}
+
+.form-panel {
+    background-color: var(--carvao);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 3.5rem;
+}
+
+.logo-link {
+    font-family: var(--fonte-display);
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: var(--areia);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 2rem;
+}
+
+.logo-link .logo-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--lima);
+    flex-shrink: 0;
+}
+
+.form-title {
+    font-family: var(--fonte-display);
+    font-size: clamp(2.4rem, 4vw, 3.5rem);
+    letter-spacing: 1px;
+    color: var(--branco);
+    line-height: 1.05;
+    margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+    font-family: var(--fonte-ui);
+    font-size: 0.95rem;
+    color: var(--cinza-texto);
+    margin-bottom: 2.5rem;
+}
+
+.form-subtitle a {
+    color: var(--lima);
+    font-weight: 600;
+    transition: opacity var(--transition);
+}
+
+.form-subtitle a:hover {
+    text-decoration: underline;
+    opacity: 0.85;
+}
+
+.form-group {
+    margin-bottom: 1.4rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+label {
+    display: block;
+    font-family: var(--fonte-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--cinza-texto);
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    background-color: var(--chumbo);
+    border: 1px solid var(--chumbo2);
+    border-radius: var(--raio);
+    padding: 0.8rem 1rem;
+    color: var(--branco);
+    font-family: var(--fonte-ui);
+    font-size: 0.95rem;
+    outline: none;
+    appearance: none;
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+input:focus {
+    border-color: var(--lima);
+    box-shadow: 0 0 3px var(--neon-lima);
+}
+
+input::placeholder { color: var(--chumbo2); }
+
+input[type="date"] { color: var(--chumbo2); }
+input[type="date"]:valid { color: var(--branco); }
+
+.form-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+    margin-bottom: 1.8rem;
+}
+
+.form-check input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    accent-color: var(--lima);
+    appearance: auto;
+}
+
+.form-check label {
+    font-size: 0.82rem;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--cinza-texto);
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.form-check label a {
+    color: var(--lima);
+    font-weight: 600;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: var(--fonte-ui);
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.8px;
+    padding: 0.85rem 2rem;
+    border-radius: var(--raio);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background var(--transition), color var(--transition);
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: var(--lima);
+    color: var(--carvao);
+    border-color: var(--lima);
+    box-shadow: 0 4px 0 #9cb81c;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #9cb81c;
+}
+
+.btn-primary:active {
+    transform: translateY(4px);
+    box-shadow: 0 0px 0 #9cb81c;
+}
+
+.btn-form {
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .form-page-wrap { grid-template-columns: 1fr; }
+    .form-visual    { display: none; }
+}
+
+@media (max-width: 600px) {
+    .form-panel { padding: 2.5rem 1.5rem; }
+    .form-row   { grid-template-columns: 1fr; }
+}

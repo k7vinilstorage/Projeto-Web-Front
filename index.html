@@ -8,9 +8,10 @@
 </head>
 <body>
 
-    <!-- ══════════════════════════════════════
-         CABEÇALHO / NAVEGAÇÃO
-         ══════════════════════════════════════ -->
+    <!-- toggle CSS-only para o menu mobile -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+
+    <!-- CABEÇALHO -->
     <header class="site-header">
         <a href="index.html" class="logo-link">
             <span class="logo-dot"></span>
@@ -22,7 +23,6 @@
             <a href="#direitos">Direitos</a>
             <a href="#portais">Vagas</a>
             <a href="#galeria">Galeria</a>
-            
             <div class="header-user">
                 <span class="user-welcome">
                     <span class="user-name">Usuário</span>
@@ -30,34 +30,45 @@
                 <a href="login.html" class="nav-cta btn-logout">Sair</a>
             </div>
         </nav>
+        <label for="nav-toggle" class="nav-hamburger" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
     </header>
 
-    <!-- ══════════════════════════════════════
-         HERO
-         ══════════════════════════════════════ -->
+    <!-- overlay: clique fora fecha o menu -->
+    <label for="nav-toggle" class="nav-overlay"></label>
+
+    <!-- MENU MOBILE -->
+    <div class="nav-mobile-menu">
+        <a href="#curriculo">Currículo</a>
+        <a href="#entrevistas">Entrevistas</a>
+        <a href="#direitos">Direitos</a>
+        <a href="#portais">Vagas</a>
+        <a href="#galeria">Galeria</a>
+        <div class="nav-mobile-user">
+            <span class="user-name">Usuário</span>
+            <a href="login.html" class="nav-cta btn-logout">Sair</a>
+        </div>
+    </div>
+
+    <!-- HERO -->
     <section class="hero">
         <div class="hero-left">
             <div class="hero-eyebrow">
                 <span class="hero-eyebrow-line"></span>
                 <span>ODS 8 — Trabalho Decente</span>
             </div>
-
             <h1 class="hero-title">
                 SEU
                 <em>PRIMEIRO</em>
                 EMPREGO
             </h1>
-
             <p class="hero-desc">
                 Tudo que você precisa saber para entrar no mercado de trabalho com confiança:
                 currículo, entrevista, direitos e as melhores oportunidades.
             </p>
-
-            <div class="hero-actions">
-                <a href="#curriculo" class="btn btn-primary">Começar agora →</a>
-                <a href="#dicas" class="btn btn-outline">Ver dicas práticas</a>
-            </div>
-
             <div class="hero-stats">
                 <div>
                     <div class="hero-stat-num">2,4M</div>
@@ -73,7 +84,6 @@
                 </div>
             </div>
         </div>
-
         <div class="hero-right">
             <div class="hero-right-img" role="img" aria-label="Jovem profissional sorrindo em ambiente de trabalho"></div>
             <div class="hero-right-overlay"></div>
@@ -81,9 +91,7 @@
         </div>
     </section>
 
-    <!-- ══════════════════════════════════════
-         TÓPICOS PRINCIPAIS
-         ══════════════════════════════════════ -->
+    <!-- TÓPICOS ESSENCIAIS -->
     <div class="section" id="curriculo">
         <div class="section-header">
             <div class="section-header-left">
@@ -94,55 +102,40 @@
         </div>
 
         <div class="topics-grid">
-
             <article class="topic-card">
                 <span class="topic-icon">📝</span>
                 <h3>Monte seu Currículo</h3>
                 <p>Um bom currículo é a sua primeira impressão. Inclua dados pessoais, objetivo profissional, formação, cursos e habilidades relevantes. Seja objetivo e honesto.</p>
-                <a href="#dicas" class="topic-link">Ver dicas completas →</a>
             </article>
-
             <article class="topic-card" id="entrevistas">
                 <span class="topic-icon">🎤</span>
                 <h3>Entrevistas</h3>
                 <p>Pesquise a empresa antes de ir. Vista-se adequadamente, chegue pontualmente e prepare respostas para perguntas comuns como "fale sobre você".</p>
-                <a href="#dicas" class="topic-link">Ver dicas completas →</a>
             </article>
-
             <article class="topic-card">
                 <span class="topic-icon">🎓</span>
                 <h3>Jovem Aprendiz</h3>
                 <p>Programa para jovens de 14 a 24 anos. Combina trabalho e formação profissional, com jornada reduzida e todos os benefícios da CLT garantidos por lei.</p>
-                <a href="#direitos" class="topic-link">Saiba seus direitos →</a>
             </article>
-
             <article class="topic-card">
                 <span class="topic-icon">🏢</span>
                 <h3>Estágios</h3>
                 <p>Modalidade complementar ao ensino. Remunerado ou não, o estágio oferece vivência prática e muitas vezes resulta em contratação efetiva após a conclusão.</p>
-                <a href="#portais" class="topic-link">Encontrar vagas →</a>
             </article>
-
             <article class="topic-card" id="direitos-topic">
                 <span class="topic-icon">⚖️</span>
                 <h3>Seus Direitos</h3>
                 <p>Todo trabalhador tem direito a carteira assinada, FGTS, 13° salário, férias, vale-transporte e outros benefícios garantidos pela Consolidação das Leis do Trabalho.</p>
-                <a href="#direitos" class="topic-link">Conhecer direitos →</a>
             </article>
-
             <article class="topic-card">
                 <span class="topic-icon">🔗</span>
                 <h3>Portais de Vagas</h3>
                 <p>Acesse plataformas especializadas como LinkedIn, SINE e Catho. Mantenha seu perfil atualizado e candidate-se a vagas alinhadas ao seu perfil e região.</p>
-                <a href="#portais" class="topic-link">Ver portais →</a>
             </article>
-
         </div>
     </div>
 
-    <!-- ══════════════════════════════════════
-         BANNER ODS 8
-         ══════════════════════════════════════ -->
+    <!-- BANNER ODS 8 -->
     <div class="ods-banner">
         <div class="ods-banner-inner">
             <div>
@@ -161,9 +154,7 @@
         </div>
     </div>
 
-    <!-- ══════════════════════════════════════
-         DICAS NUMERADAS
-         ══════════════════════════════════════ -->
+    <!-- DICAS -->
     <div class="section" id="dicas">
         <div class="section-header">
             <div class="section-header-left">
@@ -171,12 +162,10 @@
                 <h2>Dicas para se Destacar</h2>
             </div>
         </div>
-
         <div class="dicas-layout">
             <div class="dicas-img-wrap">
-                <img src="XXXX_imagem_dicas.jpg" alt="Jovem se preparando para entrevista de emprego">
+                <img src="./imgs/rafa1.jpeg" alt="Jovem se preparando para entrevista de emprego">
             </div>
-
             <ol class="dicas-numbered">
                 <li class="dica-item">
                     <div class="dica-num">01</div>
@@ -224,9 +213,7 @@
         </div>
     </div>
 
-    <!-- ══════════════════════════════════════
-         DIREITOS TRABALHISTAS
-         ══════════════════════════════════════ -->
+    <!-- DIREITOS TRABALHISTAS -->
     <div class="section" id="direitos">
         <div class="section-header">
             <div class="section-header-left">
@@ -235,7 +222,6 @@
             </div>
             <span class="chip chip-terracota">CLT + ECA</span>
         </div>
-
         <ul class="direitos-grid">
             <li class="direito-item">
                 <span class="direito-icon">📋</span>
@@ -282,9 +268,7 @@
         </ul>
     </div>
 
-    <!-- ══════════════════════════════════════
-         GALERIA
-         ══════════════════════════════════════ -->
+    <!-- GALERIA -->
     <div class="section" id="galeria">
         <div class="section-header">
             <div class="section-header-left">
@@ -292,19 +276,16 @@
                 <h2>Mundo Profissional</h2>
             </div>
         </div>
-
         <div class="gallery-grid">
-            <img class="g-tall" src="XXXX_imagem_equipe.jpg"      alt="Equipe de jovens profissionais colaborando em projeto">
-            <img src="XXXX_imagem_computador.jpg"  alt="Jovem trabalhando em computador no escritório">
-            <img src="XXXX_imagem_reuniao.jpg"     alt="Reunião de equipe em sala corporativa">
-            <img src="XXXX_imagem_treinamento.jpg" alt="Treinamento profissional em ambiente corporativo">
-            <img src="XXXX_imagem_curriculo.jpg"   alt="Jovem preenchendo currículo para vaga de emprego">
+            <img class="g-tall" src="./imgs/vini.jpeg"      alt="Equipe de jovens profissionais colaborando em projeto">
+            <img src="./imgs/rafa2.jpeg"  alt="Jovem trabalhando em computador no escritório">
+            <img src="./imgs/rafa3.jpeg"     alt="Reunião de equipe em sala corporativa">
+            <img src="./imgs/vini.jpeg" alt="Treinamento profissional em ambiente corporativo">
+            <img src="./imgs/vini.jpeg"   alt="Jovem preenchendo currículo para vaga de emprego">
         </div>
     </div>
 
-    <!-- ══════════════════════════════════════
-         PORTAIS DE VAGAS
-         ══════════════════════════════════════ -->
+    <!-- PORTAIS DE VAGAS -->
     <div class="section" id="portais">
         <div class="section-header">
             <div class="section-header-left">
@@ -312,7 +293,6 @@
                 <h2>Portais de Vagas</h2>
             </div>
         </div>
-
         <div class="portais-list">
             <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/sistema-nacional-de-emprego-sine/portal-emprega-brasil" target="_blank" class="portal-item">
                 <div class="portal-icon">🏛️</div>
@@ -345,9 +325,7 @@
         </div>
     </div>
 
-    <!-- ══════════════════════════════════════
-         RODAPÉ
-         ══════════════════════════════════════ -->
+    <!-- RODAPÉ -->
     <footer class="site-footer">
         <div class="footer-grid">
             <div class="footer-brand">
@@ -374,14 +352,8 @@
                 </ul>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>Copyright &copy; 2026 — PrimeiroEmprego. Projeto avaliativo HTML &amp; CSS.</p>
-            <div class="footer-ods">
-                <span class="ods-badge">ODS 8</span>
-                Trabalho Decente e Crescimento Econômico
-            </div>
-        </div>
     </footer>
+
 
 </body>
 </html>

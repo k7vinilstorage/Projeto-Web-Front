@@ -117,18 +117,18 @@ ol {
     color: var(--carvao); 
     padding: 0.4rem 1rem; 
     border-radius: 4px; 
-    box-shadow: 0 3px 0 var(--sombra-lima);
+    box-shadow: 0 3px 0 var(--carvao);
     transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 .nav-cta:hover { 
     transform: translateY(-2px); 
-    box-shadow: 0 5px 0 var(--sombra-lima); 
+    box-shadow: 0 5px 0 var(--carvao); 
 }
 
 .nav-cta:active { 
     transform: translateY(3px); 
-    box-shadow: 0 0px 0 var(--sombra-lima); 
+    box-shadow: 0 0px 0 var(--carvao); 
 }
 
 .nav-toggle-input { 

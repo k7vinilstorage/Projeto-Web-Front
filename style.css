@@ -41,9 +41,6 @@ ol {
     list-style: none; 
 }
 
-/* =========================================
-   CABEÇALHO E NAVEGAÇÃO
-========================================= */
 .site-header { 
     position: sticky; 
     top: 0; 
@@ -111,7 +108,6 @@ ol {
     font-weight: 700; 
 }
 
-/* Botão de Sair (Estilo 3D) */
 .nav-cta { 
     font-family: var(--fonte-ui); 
     font-size: 0.82rem; 
@@ -135,9 +131,6 @@ ol {
     box-shadow: 0 0px 0 var(--sombra-lima); 
 }
 
-/* =========================================
-   MENU MOBILE (Sem JS)
-========================================= */
 .nav-toggle-input { 
     display: none; 
 }
@@ -217,9 +210,6 @@ ol {
     border-top: 1px solid var(--chumbo2); 
 }
 
-/* =========================================
-   HERO SECTION (Banner Principal)
-========================================= */
 .hero-section { 
     background: var(--carvao); 
     padding: 4rem 1.5rem; 
@@ -280,9 +270,6 @@ ol {
     object-position: center top;
 }
 
-/* =========================================
-   SEÇÕES GENÉRICAS E GRID
-========================================= */
 .section { 
     max-width: 1100px; 
     margin: 0 auto; 
@@ -306,9 +293,6 @@ ol {
     gap: 1.5rem; 
 }
 
-/* =========================================
-   TOPIC CARDS (Card de informações)
-========================================= */
 .topic-card { 
     background: var(--chumbo); 
     padding: 2.2rem; 

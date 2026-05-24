@@ -39,13 +39,6 @@ body {
     height: 50px;
 }
 
-/*/////////////////////////////////*/
-/*/////////////////////////////////*/
-/*/////////////////////////////////*/
-/*///////// LADO ESQUERDO /////////*/
-/*/////////////////////////////////*/
-/*/////////////////////////////////*/
-/*/////////////////////////////////*/
 .left{
     background-color: var(--carvao);
     color: var(--cinza-texto);
@@ -56,8 +49,6 @@ body {
     padding: 4rem 3.5rem;
 }
 
-/* Estilizando o título do menu */
-/*//////////////////////////////*/
 .Menu_titulo{
     font-family: var(--fonte-display);
     font-size: 3.5rem;
@@ -67,8 +58,6 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* Estilizando a logo */
-/*////////////////////*/
 .logo-box{
     display: flex;
     align-items: center;
@@ -91,9 +80,6 @@ body {
     color: var(--branco);
 }
 
-
-/* Estilizando a seção de cadastro */
-/*/////////////////////////////////*/
 .Cadastro{
     margin-bottom: 2.5rem;
 }
@@ -115,9 +101,6 @@ body {
     text-decoration: underline;
 }
 
-
-/* Estilizando o Formulario */
-/*//////////////////////////*/
 form label{
     display: block;
     font-family: var(--fonte-ui);
@@ -190,14 +173,6 @@ form button[type="submit"]:active {
     box-shadow: 0 0px 0 #9cb81c;
 }
 
-
-/*/////////////////////////////////*/
-/*/////////////////////////////////*/
-/*/////////////////////////////////*/
-/*///////// LADO DIREITO //////////*/
-/*/////////////////////////////////*/
-/*/////////////////////////////////*/
-/*/////////////////////////////////*/
 .right{
     background: var(--chumbo);
     display: flex;
@@ -209,8 +184,6 @@ form button[type="submit"]:active {
     overflow: hidden;
 }
 
-/* Estilizando icone*/
-/*//////////////////*/
 .ODS8{
     display: inline-block;
     background-color: transparent;
@@ -225,8 +198,6 @@ form button[type="submit"]:active {
     margin-bottom: 1.5rem;
 }
 
-/* Estilizando o conteudo */
-/*////////////////////////*/
 .conteudo {
     position: relative;
     z-index: 2;
@@ -253,8 +224,6 @@ form button[type="submit"]:active {
     display: block;
 }
 
-/* Estilizando o numero de fundo */
-/*///////////////////////////////*/
 .numero-fundo {
     font-family: var(--fonte-display);
     font-size: 16rem;
@@ -267,15 +236,6 @@ form button[type="submit"]:active {
     pointer-events: none;
     z-index: 1;
 }
-
-
-/*/////////////////////////////////*/
-/*/////////////////////////////////*/
-/*/////////////////////////////////*/
-/*//////// RESPONSIVIDADE /////////*/
-/*/////////////////////////////////*/
-/*/////////////////////////////////*/
-/*/////////////////////////////////*/
 
 @media (max-width: 900px) {
     body{

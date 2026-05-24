@@ -112,6 +112,10 @@ ol {
     color: var(--carvao); 
 }
 
+#sair-nav-menu {
+    color: var(--carvao); 
+}
+
 .nav-cta { 
     font-family: var(--fonte-ui); 
     font-size: 0.82rem; 

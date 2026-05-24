@@ -57,7 +57,6 @@ A página principal deve abordar pelo menos alguns dos tópicos abaixo relaciona
 - [x] Orientações para entrevistas de emprego
 - [x] Direitos trabalhistas do jovem aprendiz
 - [x] Links ou referências para portais de vagas de emprego
-- [x] Informações sobre programas de estágio e aprendizagem
 
 ---
 

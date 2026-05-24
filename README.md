@@ -14,16 +14,16 @@ Este projeto tem como tema a **ODS 8 da ONU — Trabalho Decente e Crescimento E
 
 ### 📝 Página de Cadastro
 
-- [ ] Formulário com **pelo menos 5 campos** (ex: nome, e-mail, senha, data de nascimento, telefone, etc.)
-- [ ] Botão de envio que **redireciona para a página de login**
+- [x] Formulário com **pelo menos 5 campos** (ex: nome, e-mail, senha, data de nascimento, telefone, etc.)
+- [x] Botão de envio que **redireciona para a página de login**
 
 ---
 
 ### 🔐 Página de Login
 
-- [ ] Campo de **e-mail**
-- [ ] Campo de **senha**
-- [ ] Botão de envio que **redireciona para a página principal**
+- [x] Campo de **e-mail**
+- [x] Campo de **senha**
+- [x] Botão de envio que **redireciona para a página principal**
 
 ---
 
@@ -31,21 +31,21 @@ Este projeto tem como tema a **ODS 8 da ONU — Trabalho Decente e Crescimento E
 
 #### Estrutura
 
-- [ ] **Cabeçalho** (`<header>`) presente e estilizado
-- [ ] **Rodapé** (`<footer>`) presente e estilizado
-- [ ] **Menu de navegação** (`<nav>`) com links funcionais
+- [x] **Cabeçalho** (`<header>`) presente e estilizado
+- [x] **Rodapé** (`<footer>`) presente e estilizado
+- [x] **Menu de navegação** (`<nav>`) com links funcionais
 
 #### Conteúdo
 
-- [ ] **2 ou mais ícones** (ex: SVG inline, Font Awesome, ou emojis semânticos)
-- [ ] **4 ou mais caixas de texto** utilizando tags como `<p>`, `<span>`, `<li>`, etc.
-- [ ] **5 ou mais imagens** com atributo `alt` descritivo em todas elas
-- [ ] **3 ou mais links** (`<a href="...">`) funcionais
+- [x] **2 ou mais ícones** (ex: SVG inline, Font Awesome, ou emojis semânticos)
+- [x] **4 ou mais caixas de texto** utilizando tags como `<p>`, `<span>`, `<li>`, etc.
+- [x] **5 ou mais imagens** com atributo `alt` descritivo em todas elas
+- [x] **3 ou mais links** (`<a href="...">`) funcionais
 
 #### Estilo
 
-- [ ] **4 ou mais cores** distintas aplicadas no CSS
-- [ ] **2 ou mais fontes** utilizadas, sendo **pelo menos 1 fonte externa** (ex: Google Fonts)
+- [x] **4 ou mais cores** distintas aplicadas no CSS
+- [x] **2 ou mais fontes** utilizadas, sendo **pelo menos 1 fonte externa** (ex: Google Fonts)
 
 ---
 
@@ -53,11 +53,11 @@ Este projeto tem como tema a **ODS 8 da ONU — Trabalho Decente e Crescimento E
 
 A página principal deve abordar pelo menos alguns dos tópicos abaixo relacionados ao **primeiro emprego**:
 
-- [ ] Dicas de como montar um currículo
-- [ ] Orientações para entrevistas de emprego
-- [ ] Direitos trabalhistas do jovem aprendiz
-- [ ] Links ou referências para portais de vagas de emprego
-- [ ] Informações sobre programas de estágio e aprendizagem
+- [x] Dicas de como montar um currículo
+- [x] Orientações para entrevistas de emprego
+- [x] Direitos trabalhistas do jovem aprendiz
+- [x] Links ou referências para portais de vagas de emprego
+- [x] Informações sobre programas de estágio e aprendizagem
 
 ---
 

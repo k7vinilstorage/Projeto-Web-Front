@@ -521,7 +521,7 @@ ol {
     max-width: 300px; 
 }
 
-.footer-col h5 { 
+.footer-col h3 { 
     font-family: var(--fonte-ui); 
     font-size: 0.75rem; 
     color: var(--lima); 

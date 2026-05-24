@@ -10,6 +10,13 @@ Este projeto tem como tema a **ODS 8 da ONU — Trabalho Decente e Crescimento E
 
 ---
 
+# 👤​ Membros do Projeto
+
+- João Alberto Benaci Torezan
+- Rafael Munhoz Castro
+
+---
+
 ## ✅ Checklist de Requisitos
 
 ### 📝 Página de Cadastro

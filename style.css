@@ -108,6 +108,10 @@ ol {
     font-weight: 700; 
 }
 
+#sair-nav {
+    color: var(--carvao); 
+}
+
 .nav-cta { 
     font-family: var(--fonte-ui); 
     font-size: 0.82rem; 
@@ -193,13 +197,13 @@ ol {
     display: flex; 
 }
 
-.nav-mobile-menu a { 
-    padding: 1rem 0; 
-    border-bottom: 1px solid var(--chumbo2); 
-    font-family: var(--fonte-ui); 
-    color: var(--cinza-texto); 
-    text-transform: uppercase; 
-    font-weight: 600; 
+.nav-mobile-menu a:not(.nav-cta) {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--chumbo2);
+    font-family: var(--fonte-ui);
+    color: var(--cinza-texto);
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .nav-mobile-user { 
